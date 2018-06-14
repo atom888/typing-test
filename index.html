@@ -1,0 +1,38 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Typing Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div id="startWindow">
+        <div>
+            <h1>Typing Test</h1>
+            <p>Test your typing speed!</p>
+            <button id="startButton">Start Test</button>
+        </div>
+    </div>
+
+    <div id="timer"></div>
+
+    <div id="wrapper">
+        <div id="paraContainer">
+            <p id="testPara"></p>
+        </div>
+
+        <textarea id="textArea" name="textarea" rows="5" cols="50" onPaste="return false" placeholder="Timer will start once you begin typing."></textarea>
+    </div>
+
+    <div id="newTestWindow">
+        <div>
+            <h1>Time's up!</h1>
+            <p id="finalScore"></p>
+            <button id="newTestButton">Click to try again.</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="typingTest.js"></script>
+</body>
+</html>
