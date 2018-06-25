@@ -40,12 +40,14 @@ var displayTime = function() {
 };
 
 var generatePassage = function() {
+    paraContainer.style.display = "inline-block";
+    textArea.style.display = "inline-block";
     var passages = [passage1, passage2, passage3, passage4, passage5];
     testPara.innerHTML = passages[Math.floor(Math.random()*10/2)];
 };
 
 var test = function() {
-    startWindow.style.dislay = "none";
+    startWindow.style.display = "none";
     timer.innerHTML = "Time Remaining: 60s";
     timer.style.display = "block";
     textArea.addEventListener("keydown", displayTime);
